@@ -42,12 +42,12 @@ namespace MovieApp.UI.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register()
+        public IActionResult RegisterUser()
         {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Register(UserModel usermodel)
+        public async Task<IActionResult> RegisterUser(UserModel usermodel)
         {
             using (HttpClient client = new HttpClient())
             {
